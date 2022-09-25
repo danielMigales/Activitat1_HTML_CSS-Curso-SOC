@@ -17,10 +17,27 @@ h1 {
 h2 {
     margin-top: 80px;
     text-transform: uppercase;
-    text-decoration: underline solid 4px;
-    color: #829170;
+    text-decoration: underline solid 4px #829170;
 }
 
 h2::first-letter {
     font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+header {
+    text-align: center;
+}
+
+nav>a {
+    color: #829170;
+    font-size: 20px;
+    text-decoration: none;
+    padding-right: 20px;
+}
+nav>a:hover{
+    text-decoration: underline;
 }
