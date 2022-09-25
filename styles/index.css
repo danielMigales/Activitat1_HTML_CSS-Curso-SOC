@@ -32,12 +32,40 @@ header {
     text-align: center;
 }
 
-nav>a {
+nav a {
     color: #829170;
     font-size: 20px;
     text-decoration: none;
     padding-right: 20px;
 }
-nav>a:hover{
+
+nav a:hover {
     text-decoration: underline;
+}
+
+#El_restaurant p {
+    line-height: 2;
+}
+
+mark {
+    background-color: #d7dbd2e0;
+}
+
+dl {
+    display: inline-block;
+    /*¿¿¿¿¿una alineació vertical a la part superior????  AIXO NO ENTENC QUE VOL DIR, ES LA PRIMERA VEGADA QUE HO ESCOLTO. NO SE SI ES AIXO:*/
+    vertical-align: top;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+dt {
+    font-weight: bold;
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+
+dd {
+    margin-right: 0px;
+    margin-bottom: 15px;
 }
