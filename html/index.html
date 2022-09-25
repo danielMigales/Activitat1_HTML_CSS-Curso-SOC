@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Orenga</title>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Restaurant Orenga</h1>
+        <img src=" https://img.freepik.com/free-photo/drythyme_1339-195.jpg "
+            alt=" Orenga, l'herba essencial al restaurant." width="220" height="104">
+        <nav>
+            <ul>
+                <li><a href="#El_restaurant">El restaurant</a></li>
+                <li><a href="#Oferta_gastronòmica">Oferta gastronòmica</a></li>
+                <li><a href="#Reserves">Reserves</a></li>
+                <li><a href="#L’equip">L’equip</a></li>
+                <li><a href="workwithus.html">Treballa amb nosaltres</a></li>
+                <li><a href="#footer">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="El_restaurant">
+            <h2>El restaurant</h2>
+            <p>El <strong>restaurant Orenga</strong> pren el nom de la planta aromàtica i perenne de la família de
+                les lamiàcies.
+                L'orenga, també anomenat herba musca o roca morera té un aroma que recorda la menta i la sajolida.
+            </p>
+            <p>En l'àmbit culinari lliga perfecte amb <mark>amanides vegetals</mark> , sobretot amb el
+                <mark>tomàquet</mark>, i és l'herba
+                clàssica per condimentar <mark>carns</mark>. Aporta un gust molt fi als <mark>estofats</mark>, a les
+                <mark>salses per a pasta</mark>, a les
+                <mark>pizzes</mark> i a les <mark>empanades de carn</mark>. És aquest el motiu pel qual l'orenga és un
+                nom ben representatiu
+                que està en una bona part de l'oferta gastronòmica que oferim.
+            </p>
+            <p>El restaurant se situa al bell mig del Parc Natural de la Serra de Collserola on gaudeix d'un entorn
+                natural immillorable amb vistes a Barcelona, Sant Cugat del Vallès i a un petit llac. Queda a prop
+                dels nuclis urbans de Sant Cugat del Vallés, Cardanyola del Vallès, Montaca i Reixac, Santa Coloma
+                de Gramenet, Badalona, Barcelona, L'Hospitalet de Llobregat, Esplugues de Llobregat, Cornellà de
+                Llobregat, Sant Just Desvern, Sant Feliu de Llobregat, Sant Joan Despí, Molins de Rei i Valldoreix.
+            </p>
+        </section>
+
+        <section id="Oferta_gastronòmica">
+            <h2>Oferta gastronòmica</h2>
+            <section id="pizzes">
+                <h3>Pizzes</h3>
+                <img src="https://images.pexels.com/photos/5903319/pexels-photo-5903319.jpeg" alt="Pizzes" width="320"
+                    height="400">
+                <dl>
+                    <dt>Bambini Margherita</dt>
+                    <dd>Tomàquet i mozzarella.</dd>
+                    <dt>Rustica</dt>
+                    <dd>Tomàquet cherry, mozzarella, xampinyons, carxofes i tonyina.</dd>
+                    <dt>Salmonata Genovese</dt>
+                    <dd>Mozzarella, pesto, salmó, tomàquet confitat, ricotta, oliva taggiasca, rúcula i mel.</dd>
+                    <dt>4 Stagioni</dt>
+                    <dd>Tomàquet, mozzarella, xampinyons, gambes, guanciale i pernil dolç.</dd>
+                    <dt>Calzone Arrabbiata</dt>
+                    <dd>Pizza amb salsa de tomàquet picant, xampinyons i rúcula. Farciment amb salsa Arrabbiata,
+                        embotits
+                        picants i mozzarella.</dd>
+                </dl>
+            </section>
+            <section id="pasta">
+                <h3>Salses per la pasta.</h3>
+                <img src="https://images.pexels.com/photos/1435896/pexels-photo-1435896.jpeg" alt="Pasta amb salsa"
+                    width="400" height="300">
+                <dl>
+                    <dt>Pesto rosso panna</dt>
+                    <dd>Crema, tomàquet sec, pinyons, formatge i nous.</dd>
+                    <dt>Tartufo bianco</dt>
+                    <dd>Crema de tòfona blanca i cruixent de coppa.</dd>
+                    <dt>Rustica</dt>
+                    <dd>Bacó, olives negres, tomàquet, alfàbrega, ceba i grana padano DOP.</dd>
+                    <dt>Salame e mascarpone</dt>
+                    <dd>Crema de formatge mascarpone amb ibèrics, pinyons i espinacs.</dd>
+                    <dt>Calabrese</dt>
+                    <dd>Crema de tòfona blanca i cruixent de coppa.</dd>
+                </dl>
+            </section>
+        </section>
+
+        <section id="Reserves">
+            <h2>Reserves</h2>
+            <form action="/my-handling-form-page" method="post">
+                <fieldset>
+                    <legend>Faci la seva reserva per tenir garantida una experiència inoblidable al Restaurant Orenga.
+                    </legend>
+                    <p>
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Pep" required>
+                    </p>
+                    <p>
+                        <label for="cognoms">Cognom(s)</label>
+                        <input type="text" id="cognoms" name="cognoms" placeholder="Altafulla Valentí" required />
+                    </p>
+                    <p>
+                        <label for="tel">Telèfon</label>
+                        <input type="tel" id="tel" name="telefon" placeholder="+34 643 423 521" required>
+                    </p>
+                    <p>
+                        <label for="email">Correu(s) electrònic(s)</label>
+                        <input type="email" id="email" name="email" placeholder="nom@outlook.com, nom@gmail.com"
+                            size="60" required multiple>
+                    </p>
+                    <p>
+                        <label for="comensals">Número de comensals</label>
+                        <input type="number" id="comensals" name="comensals" min="1" max="50" value="4" step="1"
+                            required>
+                    </p>
+                    <p>
+                        <span>Hi ha un o més d'un comensal menor de 5 anys?</span>
+                    </p>
+                    <p>
+                        <label for="si">Si</label>
+                        <input type="radio" id="si" name="menor" value="Si">
+                    </p>
+                    <p>
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="menor" value="No" checked>
+                    </p>
+                    <p>
+                        <label for="reserva">Dia</label>
+                        <input type="date" id="reserva" name="data" min="2022-09-22" max="2022-12-31" required>
+                    </p>
+                    <p>
+                        <label for="hora">Hora</label>
+                        <input type="time" id="hora" name="horari" list="llistahorespopulars" min="13:00" max="23:00"
+                            required>
+                        <datalist id="llistahorespopulars">
+                            <option value="13:00">
+                            <option value="14:00">
+                            <option value="15:00">
+                            <option value="20:00">
+                            <option value="21:00">
+                            <option value="22:00">
+                        </datalist>
+                    </p>
+                    <p>
+                        <label for="ubicacio">Ubicació en el restaurant</label>
+                        <select name="ubicacio" id="ubicacio">
+                            <optgroup label="Interior">
+                                <option value="italia">Sala Itàlia</option>
+                                <option value="mexic">Sala Mèxic</option>
+                                <option value="argentina">Sala Argentina</option>
+                                <option value="frança">Sala França</option>
+                            </optgroup>
+                            <optgroup label="Exterior">
+                                <option value="vistesbcn">Terrassa amb vistes a Barcelona</option>
+                                <option value="vistessancugat">Terrassa amb vistes a Sant Cugat</option>
+                                <option value="vistesllac" selected>Terrassa amb vistes al Llac</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="idioma">Idioma en què prefereix ser atès</label>
+                        <input type="text" id="idioma" name="idioma" placeholder="Català" list="idiomes" required>
+                        <datalist id="idiomes">
+                            <option value="Alemany">Alemany</option>
+                            <option value="Anglès">Anglès</option>
+                            <option value="Català">Català</option>
+                            <option value="Espanyol">Espanyol</option>
+                            <option value="Francès">Francès</option>
+                            <option value="Xinès">Xinès</option>
+                        </datalist>
+                    </p>
+                    <p>
+                        <label for="comentaris">Comentaris a tenir en consideració</label>
+                        <br>
+                        <textarea name="textarea" id="comentaris"
+                            placeholder="Un dels comensals és intolerant a la lactosa." cols="40" rows="5"
+                            maxlength="800"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Reservar">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="L’equip">
+            <h2>L’equip</h2>
+            <figure>
+                <img src="https://images.pexels.com/photos/2696064/pexels-photo-2696064.jpeg" alt="Joan i Maria."
+                    width="450" height="280">
+                <figcaption>Joan (xef) i Maria (xef i cap de cuina).</figcaption>
+            </figure>
+            <figure>
+                <img src="https://images.pexels.com/photos/6817133/pexels-photo-6817133.jpeg" alt="Hèctor." width="220"
+                    height="320">
+                <figcaption>Hèctor (cambrer i cap de sala).</figcaption>
+            </figure>
+            <figure>
+                <img src="https://images.pexels.com/photos/3801649/pexels-photo-3801649.jpeg" alt="Jasmine." width="450"
+                    height="280">
+                <figcaption>Jasmine (cambrera).</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <h2>Contacte</h2>
+        <address>
+            <p>URL:<a href="#top">https:restaurantorenga.cat</a></p>
+            <p>Contacte: <a href="mailto:info@restaurantorenga.cat">info@restaurantorenga.cat</a></p>
+            <p>Telèfon: <a href="tel:+3493000000">+34 930 00 000</a></p>
+            <p>Adreça: Avinguda del Llac, 34, 08196 Sant Cugat del Vallès, Barcelona.</p>
+            <p>Coordenades: 41.44477960905445, 2.107936571164812</p>
+            <p>Horari: De dimarts a diumenge de 12:30 a 16:30 i de 19:30 a 23:30.</p>
+            <p>Xarxes socials:
+                <a href="https://www.youtube.com/" style="text-decoration:none" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" width="25"
+                        height="25" />
+                </a>
+                <a href="https://www.instagram.com/" style="text-decoration:none" target="_blank">
+                    <img src=" https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="25"
+                        height="25" />
+                </a>
+                <a href="https://twitter.com/" style="text-decoration:none" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="25"
+                        height="25" />
+                </a>
+                <a href="https://www.facebook.com/" style="text-decoration:none" target="_blank">
+                    <img src=" https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook" width="25"
+                        height="25" />
+                </a>
+                <a href="https://www.linkedin.com/" style="text-decoration:none" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin" width="25"
+                        height="25" />
+                </a>
+            </p>
+            <p><strong>Copyright © Restaurant Orenga, 2022. Tots els drets reservats.</strong><br>
+                <small>Sense perjudici de les exempcions legals existents, queda prohibida la reproducció, distribució,
+                    comunicació pública o transformació d'aquesta obre sense l'autorització del titular dels drets, i
+                    qualsevol altre acte que en contravingui els drets de propietat intel·lectual i industrial.<br>
+                    Per a qualsevol ús que se'n vulgui fer no previst a la llei,
+                    dirigiu-vos a: <a href="mailto:legal@restaurantorenga.cat">legal@restaurantorenga.cat</a> </small>
+            </p>
+            <p><a href="#">Tornar al principi</a></p>
+            <details>
+                <summary>Referències i atribucions.</summary>
+                <ul>
+                    <li>
+                        <a href="https://www.freepik.com/free-photo/drythyme_1129589.htm">Imatge de
+                            l'orenga feta per
+                            topntp26 a Freepik</a>
+                    </li>
+                    <li>
+                        <a href="https://www.pexels.com/photo/differentflavor-of-pizza-on-a-wooden-table-5903319/">Foto
+                            de pizzes feta per ROMAN ODINTSOV i obtinguda de Pexels</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.pexels.com/photo/flatpasta-noodle-with-green-sauce-dish-and-cherry-tomato-on-top-1435896/">Foto
+                            de pasta amb salsa feta per Engin Akyurt i obtinguda de Pexels</a>
+                    </li>
+                    <li><a
+                            href="https://www.pexels.com/photo/man-andwoman-wearing-black-and-white-striped-aprons-cooking-2696064/">Foto
+                            de cuiner i cuinera feta per Elle Hughes i obtinguda de Pexels</a>
+                    </li>
+                    <li>
+                        <a href="https://www.pexels.com/photo/man-in-black-veststanding-beside-a-window-6817133/">Foto
+                            de cambrer feta per Yan Krukov i obtinguda de Pexels</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.pexels.com/photo/shallowfocus-photo-of-woman-smiling-while-holding-pen-and-paper-3801649/">Foto
+                            de cambrera feta per Andrea Piacquadio i obtinguda de Pexels</a>
+                    </li>
+                    <li>
+                        <a href=" https://www.flaticon.com/free-icon/youtube_1384060">Icona de YouTube
+                            creada per Freepik
+                            - Flaticon</a>
+                    </li>
+                    <li>
+                        <a href="https://www.flaticon.com/free-icon/instagram_2111463">Icona d'Instagram
+                            creada per Pixel
+                            perfect - Flaticon</a>
+                    </li>
+                    <li>
+                        <a href="https://www.flaticon.com/free-icon/twitter_733579">Icona de Twitter
+                            creada per Pixel
+                            perfect - Flaticon</a>
+                    </li>
+                    <li>
+                        <a href="https://www.flaticon.com/free-icon/facebook_5968764">Icona de Facebook
+                            creada per
+                            Freepik - Flaticon</a>
+                    </li>
+                    <li>
+                        <a href="https://www.flaticon.com/free-icon/linkedin_174857">Icona de LinkedIn
+                            creada per
+                            Freepik - Flaticon</a>
+                    </li>
+                </ul>
+            </details>
+        </address>
+    </footer>
+</body>
+
+</html>

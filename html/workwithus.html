@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treballa amb Nosaltres</title>
+</head>
+
+<body>
+    <main>
+        <h1>Busquem personal per treballar al <a href="index.html">Restaurant Orenga</a></h1>
+        <form action="/my-handling-form-page" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Omple el formulari i ens posarem en contacte el més aviat posible</legend>
+                <p>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Ana" required>
+                </p>
+                <p>
+                    <label for="cognoms">Cognom(s)</label>
+                    <input type="text" id="cognoms" name="cognoms" placeholder=" Rovira Blanca" required />
+                </p>
+                <p>
+                    <label for="tel">Telèfon</label>
+                    <input type="tel" id="tel" name="telefon" placeholder="+34 643 423 521" required>
+                </p>
+                <p>
+                    <label for="email">Correu electrònic(s)</label>
+                    <input type="email" id="email" name="email" placeholder="nom@outlook.com" size="60" required>
+                </p>
+                <p>
+                    <label for="feina">Càrrecs vacants als quals aspires <small>(tecla Ctrl per seleccionar més
+                            d'un)</small></label> <br>
+                    <select name="feinas" id="feina" size="4" multiple>
+                        <option value="capcuina">Cap de cuina</option>
+                        <option value="xef">Xef</option>
+                        <option value="cuiner" selected="selected">Cuiner/a</option>
+                        <option value="ajudantcuina">Ajudant de cuiner/a</option>
+                        <option value="capsala">Cap de sala</option>
+                        <option value="cambrer">Cambrer/a</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="curriculum"> Currículum</label>
+                    <input type="file" id="curriculum" name="curriculum" accept=".pdf" required>
+                </p>
+                <p>
+                    <label for="url">Enllaç al teu perfil de LinkedIn</label>
+                    <input type="url" name="url" id="url">
+                </p>
+                <p>
+                    <label for="datainici">Dia a partir del qual pots incorporar-te</label>
+                    <input type="date" id="datainici" name="datainici" min="2022-09-23" required>
+                </p>
+                <p>
+                    <label for="privacitat">Accepto la política de privacitat en enviar aquest formulari.</label>
+                    <input type="checkbox" id="privacitat" required>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
