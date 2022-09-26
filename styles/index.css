@@ -72,7 +72,7 @@ dd {
 input,
 select,
 textarea {
-    border: 1, 5px solid black;
+    border: 1.5px solid black;
     border-radius: 4px;
     padding: 8px;
 }
@@ -116,9 +116,7 @@ input[type=submit] {
     font-size: 12px;
 }
 
-/*Utilitzant un selector combinador per tots els elements strong dins de l’element que té per classe copyright,
-defineix la mida del text a 10px.*/
-.copyright strong {
+.copyright small {
     font-size: 10px;
 }
 
