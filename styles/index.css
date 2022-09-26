@@ -53,7 +53,6 @@ mark {
 
 dl {
     display: inline-block;
-    /*¿¿¿¿¿una alineació vertical a la part superior????  AIXO NO ENTENC QUE VOL DIR, ES LA PRIMERA VEGADA QUE HO ESCOLTO. NO SE SI ES AIXO:*/
     vertical-align: top;
     margin-top: 0px;
     margin-left: 20px;
@@ -66,6 +65,67 @@ dt {
 }
 
 dd {
-    margin-right: 0px;
+    margin-left: 0px;
     margin-bottom: 15px;
+}
+
+input,
+select,
+textarea {
+    border: 1, 5px solid black;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+input[type=text]:focus,
+[type=tel]:focus,
+[type=email]:focus,
+[type=number]:focus,
+[type=date]:focus,
+[type=time]:focus,
+select:focus,
+textarea:focus {
+    background-color: #d7dbd2e0;
+}
+
+input[type=submit] {
+    padding: 10px;
+    background-color: #d7dbd2e0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#equip figure {
+    display: inline-block;
+}
+
+#footer address {
+    margin-bottom: 40px;
+}
+
+#footer a {
+    color: #829170;
+}
+
+.copyright,
+.inici {
+    margin-bottom: 40px;
+}
+
+.copyright strong {
+    font-size: 12px;
+}
+
+/*Utilitzant un selector combinador per tots els elements strong dins de l’element que té per classe copyright,
+defineix la mida del text a 10px.*/
+.copyright strong {
+    font-size: 10px;
+}
+
+details ul {
+    font-size: 14px;
+}
+
+details ul>li {
+    margin-bottom: 0px;
 }
