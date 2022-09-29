@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Orenga</title>
     <link rel="stylesheet" href="../styles/index.css">
+    <!--INSERCIO DE JAVASCRIPT EXTERN-->
+    <script src="../scripts/index.js" defer></script>
 </head>
 
 <body>
@@ -16,19 +18,19 @@
             alt=" Orenga, l'herba essencial al restaurant." width="220" height="104">
 
         <!--AQUI HE TRET LA LLISTA UL-LI PERQUE QUEDES IGUAL QUE L'EXEMPLE. A L'ENUNCIAT NO ESPECIFICABA QUE ES NECESSITES I JO LA VAIG POSAR-->
-
+        <!--HE FET CANVIS ALS ID DE LES SECCIONS CAMBIANT ELS NOMS. RECTIFICACT TAMBE AL NAV-->
         <nav>
-            <a href="#El_restaurant">El restaurant</a>
-            <a href="#Oferta_gastronòmica">Oferta gastronòmica</a>
+            <a href="#restaurant">El restaurant</a>
+            <a href="#ofertaGastronomica">Oferta gastronòmica</a>
             <a href="#Reserves">Reserves</a>
-            <a href="#L’equip">L’equip</a>
+            <a href="#equip">L’equip</a>
             <a href="workwithus.html">Treballa amb nosaltres</a>
             <a href="#footer">Contacte</a>
         </nav>
     </header>
 
     <main>
-        <section id="El_restaurant">
+        <section id="restaurant">
             <h2>El restaurant</h2>
             <p>El <strong>restaurant Orenga</strong> pren el nom de la planta aromàtica i perenne de la família de
                 les lamiàcies.
@@ -50,7 +52,7 @@
             </p>
         </section>
 
-        <section id="Oferta_gastronòmica">
+        <section id="ofertaGastronomica">
             <h2>Oferta gastronòmica</h2>
             <section id="pizzes">
                 <h3>Pizzes</h3>
@@ -102,7 +104,7 @@
                     </p>
                     <p>
                         <label for="cognoms">Cognom(s)</label>
-                        <input type="text" id="cognoms" name="cognoms" placeholder="Altafulla Valentí" required />
+                        <input type="text" id="cognoms" name="cognoms" placeholder="Altafulla Valentí" required>
                     </p>
                     <p>
                         <label for="tel">Telèfon</label>
@@ -113,10 +115,15 @@
                         <input type="email" id="email" name="email" placeholder="nom@outlook.com, nom@gmail.com"
                             size="60" required multiple>
                     </p>
+                    <!--CANVIO L'ID DEL INPUT PER QUE SIGUI IGUAL QUE L'EXEMPLE A L'ANUNCIAT-->
                     <p>
-                        <label for="comensals">Número de comensals</label>
-                        <input type="number" id="comensals" name="comensals" min="1" max="50" value="4" step="1"
-                            required>
+                        <label for="numeroComensals">Número de comensals</label>
+                        <input type="number" id="numeroComensals" name="numeroComensals" min="1" max="50" value="4"
+                            step="1" required>
+
+                        <!--NOU PARAGRAF AFEGIT A L'EXERCICI DE JAVASCRIPT-->
+                        <small> <span>(El preu total aproximat a 50€/persona seria de </span> <output
+                                for="numeroComensals" id="preuAproximat">200</output> <span>€)</span> </small>
                     </p>
                     <p>
                         <span>Hi ha un o més d'un comensal menor de 5 anys?</span>
@@ -181,8 +188,9 @@
                             placeholder="Un dels comensals és intolerant a la lactosa." cols="40" rows="5"
                             maxlength="800"></textarea>
                     </p>
+                    <!--AFEGEIXO UN ID AL BOTO PER FER-LO SERVIR AMB JAVASCRIPT-->
                     <p>
-                        <input type="submit" value="Reservar">
+                        <input type="submit" id="reservar" value="Reservar">
                     </p>
                 </fieldset>
             </form>
@@ -221,23 +229,23 @@
             <p>Xarxes socials:
                 <a href="https://www.youtube.com/" style="text-decoration:none" target="_blank">
                     <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" width="25"
-                        height="25" />
+                        height="25">
                 </a>
                 <a href="https://www.instagram.com/" style="text-decoration:none" target="_blank">
                     <img src=" https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="25"
-                        height="25" />
+                        height="25">
                 </a>
                 <a href="https://twitter.com/" style="text-decoration:none" target="_blank">
                     <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="25"
-                        height="25" />
+                        height="25">
                 </a>
                 <a href="https://www.facebook.com/" style="text-decoration:none" target="_blank">
                     <img src=" https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook" width="25"
-                        height="25" />
+                        height="25">
                 </a>
                 <a href="https://www.linkedin.com/" style="text-decoration:none" target="_blank">
                     <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin" width="25"
-                        height="25" />
+                        height="25">
                 </a>
             </p>
             <!--AQUI HE RECTIFICAT EL TANCAMENT DE L'ELEMENT ADDRESS. NO HAVIA LLEGIT BE L'ENUNCIAT, ARA HE VIST QUE LA RESTA ES UN ALTRE PUNT DIFERENT-->
