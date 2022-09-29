@@ -34,25 +34,21 @@ function afegeixEsdevenimentEnviamentFormulari() {
         event.preventDefault();
         const botonsRadio = this.elements["menor"]
         const valorRadioSeleccionat = botonsRadio.value;
-
         if (valorRadioSeleccionat == "Si") {
-
             var desplegableUbicacions = document.getElementById("ubicacio");
             var llocEscogit = ubicacio.options[ubicacio.selectedIndex].text;
 
             if (llocEscogit == "Sala Mèxic") {
                 alert("No es pot fer una reserva si hi ha menors de 5 anys i la ubicació triada és la Sala Mèxic ja que no està suficientment habilitada.");
             }
-            else{
-                alert("Reserva efectuada.")
+            else {
+                alert("Reserva efectuada. L'esperem el dia i hora indicada")
             }
         }
         else {
-            alert("Reserva efectuada.")
+            alert("Reserva efectuada. L'esperem el dia i hora indicada")
         }
-
     });
-
 }
 
 /***** Footer (secció contacte) *****/
@@ -72,12 +68,15 @@ function actualitzaHora() {
     let hores = data.getHours();
     let minuts = data.getMinutes();
     let segons = data.getSeconds();
-    // hores = estableixFormatDosDigits(hores);
-    // minuts = estableixFormatDosDigits(minuts);
-    // segons = estableixFormatDosDigits(segons);
+    hores = estableixFormatDosDigits(hores);
+    minuts = estableixFormatDosDigits(minuts);
+    segons = estableixFormatDosDigits(segons);
     document.getElementById("horaActual").innerHTML = hores + ":" + minuts + ":" + segons;
 }
 
 function estableixFormatDosDigits(valor) {
-    // Afegeix aquí el teu codi 
+    if (valor < 10) {
+        valor = '0' + valor;
+    }
+    return valor;
 }
