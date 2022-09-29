@@ -29,21 +29,29 @@ function afegeixEsdevenimentCanviNumeroComensals() {
 }
 
 function afegeixEsdevenimentEnviamentFormulari() {
-
-    const botoEnviament = document.getElementById("reservar");
-
-    botoEnviament.addEventListener("submit", function (event) {
+    const inputRadio = document.getElementsByTagName("form")[0];
+    inputRadio.addEventListener("submit", function (event) {
         event.preventDefault();
+        const botonsRadio = this.elements["menor"]
+        const valorRadioSeleccionat = botonsRadio.value;
 
-        var botonsRadio = document.getElementsByName("menor");
-        for (i = 0; i < botonsRadio.length; i++) {
-            if (botonsRadio[0].checked) {
-                alert("No es pot fer una reserva si hi ha menors de 5 anys i la ubicació triada és la Sala Mèxic ja que no està suficientment habilitada.")
+        if (valorRadioSeleccionat == "Si") {
+
+            var desplegableUbicacions = document.getElementById("ubicacio");
+            var llocEscogit = ubicacio.options[ubicacio.selectedIndex].text;
+
+            if (llocEscogit == "Sala Mèxic") {
+                alert("No es pot fer una reserva si hi ha menors de 5 anys i la ubicació triada és la Sala Mèxic ja que no està suficientment habilitada.");
             }
+            else{
+                alert("Reserva efectuada.")
+            }
+        }
+        else {
+            alert("Reserva efectuada.")
+        }
 
-
-
-        });
+    });
 
 }
 
@@ -64,9 +72,9 @@ function actualitzaHora() {
     let hores = data.getHours();
     let minuts = data.getMinutes();
     let segons = data.getSeconds();
-    hores = estableixFormatDosDigits(hores);
-    minuts = estableixFormatDosDigits(minuts);
-    segons = estableixFormatDosDigits(segons);
+    // hores = estableixFormatDosDigits(hores);
+    // minuts = estableixFormatDosDigits(minuts);
+    // segons = estableixFormatDosDigits(segons);
     document.getElementById("horaActual").innerHTML = hores + ":" + minuts + ":" + segons;
 }
 
